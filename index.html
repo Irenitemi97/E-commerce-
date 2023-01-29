@@ -16,7 +16,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- link to css -->
     <link rel="stylesheet" href="style.css">
-    
+    <script src="index.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8kJv77-bla_A4zVDe");
+        })();
+    </script>
   
 
 </head>
@@ -353,28 +360,28 @@
                 </div>
 
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                    <form  class="in-space">
+                    <div  class="in-space">
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label for="name">Your Name</label>
+                                <h5 for="name">Your Name</h5>
                                 <input type="text" name="name" class="form-control" id="name" required>
                             </div>
                             <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <label for="name">Your Email</label>
+                                <h5 for="name">Your Email</h5>
                                 <input type="email" class="form-control" name="email" id="email" required>
                             </div>
                         </div>
                         <div class="form-group mt-3">
-                            <label for="name">Subject</label>
+                            <h5 for="name">Subject</h5>
                             <input type="text" class="form-control" name="subject" id="subject" required>
                         </div>
                         <div class="form-group mt-3">
-                            <label for="name">Message</label>
+                            <h5 for="name">Message</h5>
                             <textarea class="form-control"  rows="10" id="message" required></textarea>
                         </div>
 
-                        <div class="text-center"><button type="submit" onclick="sendMail">Send Message</button></div>
-                    </form>
+                        <div class="text-center"><button type="submit" onclick="sendMail()">Send Message</button></div>
+                    </div>
                 </div>
 
             </div>
